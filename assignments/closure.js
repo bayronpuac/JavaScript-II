@@ -3,6 +3,17 @@
 // Keep it simple! Remember a closure is just a function
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
+function favoriteFood(food){
+const food1 = 'Chicken Alfredo'
+  const food2 = 'Steak'
+  console.log(`My all time favorite foods are ${food1} and ${food2}`);
+}
+
+favoriteFood();
+  
+
+
+  
 
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
