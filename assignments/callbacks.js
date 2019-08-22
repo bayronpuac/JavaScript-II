@@ -42,7 +42,7 @@ function getLength(arr, cb) {
   return cb(arr.length); // getLength passes the length of the array into the callback.
 };
 
-getLength(items,(arrLength) => {
+getLength(items, (arrLength) => {
   console.log(arrLength);
 });
 
@@ -56,19 +56,21 @@ last(items, (lastItem) => {
 });
 
 function sumNums(x, y, cb) {
- return cb(x + y);  // sumNums adds two numbers (x, y) and passes the result to the callback.
+ let result = (x + y);
+ return cb(result)  // sumNums adds two numbers (x, y) and passes the result to the callback.
 }
 
-sumNums(4, 5, (x, y) => {
-  console.log(x,y);
+sumNums(4, 5,(result) => {
+  console.log(result);
 });
 
 function multiplyNums(x, y, cb) {
-  return cb(x * y);// multiplyNums multiplies two numbers and passes the result to the callback.
+  let result =(x * y)
+  return cb(result);// multiplyNums multiplies two numbers and passes the result to the callback.
 }
 
-multiplyNums(5, 6,(x,y) => {
-  console.log(x,y);
+multiplyNums(5, 6,(result) => {
+  console.log(result);
 });
 
 function contains(item, list, cb) {
@@ -80,9 +82,9 @@ function contains(item, list, cb) {
     return cb(false);
   }
 }
- contains('Gum', items, function(result){
+ contains('backpack', items, function(result){
   console.log(result);
-})
+});
 
 
 /* STRETCH PROBLEM */
